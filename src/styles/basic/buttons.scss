@@ -1,0 +1,92 @@
+.btn-primary {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-dark;
+  min-width: 215px;
+  height: 36px;
+  border-radius: 3px;
+  background-color: $color-white !important;
+  border: solid 1px $color-card-grey;
+  box-shadow: none !important;
+
+  &:hover {
+    background-color: $color-background !important;
+  }
+
+  .btn__content {
+    justify-content: space-between;
+  }
+}
+
+.btn-green {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-white !important;
+  min-width: 215px;
+  height: 36px;
+  border-radius: 3px;
+  background-color: $color-accent !important;
+  box-shadow: none !important;
+
+  &:hover {
+    background-color: #6dcf9e !important;
+  }
+
+  .btn__content {
+    justify-content: space-between;
+  }
+
+  .icon {
+    color: $color-white;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+
+.btn-prev {
+  margin: 0px;
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-dark;
+  min-width: 122px;
+  height: 36px;
+  border-radius: 3px;
+  background-color: $color-background !important;
+  border: solid 1px $color-card-grey;
+  box-shadow: none !important;
+
+  &:hover {
+    background-color: #ececec !important;
+  }
+
+  .v-btn__content {
+    justify-content: space-between;
+  }
+}
+
+.btn-loadmore {
+  background-color: $color-primary !important;
+}
+
+.btn-help {
+  position: fixed !important;
+  bottom: 60px;
+  right: 15px;
+  background-color: $color-primary !important;
+  color: white !important;
+  width: 150px;
+  font-weight: bold !important;
+  height: 30px;
+  font-size: 15px;
+  text-transform: capitalize !important;
+
+  i {
+    margin-left: 0 !important;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+}

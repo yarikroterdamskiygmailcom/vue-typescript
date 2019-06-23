@@ -1,0 +1,54 @@
+image: docker:latest
+services:
+  - docker:dind
+
+stages:
+  - build
+  - staging
+  - production
+  
+variables:
+  DOCKER_HOST: tcp://localhost:2375
+  
+before_script:
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+
+build:
+  stage: build
+  script:
+    - docker build --pull -t $CI_REGISTRY_IMAGE:$CI_BUILD_REF .
+    - docker push $CI_REGISTRY_IMAGE:$CI_BUILD_REF
+  only:
+    - develop
+
+# Depends on CLOUDSDK_CORE_PROJECT, CLOUDSDK_CONTAINER_CLUSTER, and CLOUDSDK_COMPUTE_ZONE being set
+.gcloud: &gcloud
+  - echo "$SERVICE_ACCOUNT_KEY" > key.json
+  - gcloud auth activate-service-account --key-file=key.json
+  - gcloud --quiet container clusters get-credentials $CLOUDSDK_CONTAINER_CLUSTER
+  
+.staging_deploy: &staging_deploy
+  image: google/cloud-sdk
+  stage: staging
+  environment: staging
+  before_script: *gcloud
+  script:
+    - kubectl patch deployment charttool-fe-v1 -n charttool-staging -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"charttool-fe-v1"'","image":"'"$CI_REGISTRY_IMAGE:$CI_BUILD_REF"'"}]}}}}'
+
+deploy to staging:
+  <<: *staging_deploy
+  only:
+    - develop
+
+.production_deploy: &production_deploy
+  image: google/cloud-sdk
+  stage: production
+  environment: production
+  before_script: *gcloud
+  script:
+    - kubectl patch deployment charttool-fe-v1 -n charttool-production -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"charttool-fe-v1"'","image":"'"$CI_REGISTRY_IMAGE:$CI_BUILD_REF"'"}]}}}}'
+
+deploy to production:
+  <<: *production_deploy
+  only:
+    - master

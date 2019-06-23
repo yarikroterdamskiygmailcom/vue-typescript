@@ -1,0 +1,563 @@
+@import './basic/_index';
+
+html,
+body {
+  height: auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  color: $color-dark;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: $color-dark;
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  color: $color-dark;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: #80c0d8;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.43;
+  color: $color-primary-grey;
+}
+
+.v-btn--active:before,
+.v-btn:focus:before,
+.v-btn:hover:before {
+  background-color: transparent !important;
+}
+
+.container {
+  max-width: 1185px;
+}
+
+.application--wrap {
+  justify-content: space-between;
+}
+
+.input-search {
+  margin-top: 5px;
+  border-radius: 3px;
+  height: 36px;
+  padding: 5px 12px;
+  border: 1px solid #d4d4d4;
+  width: 230px;
+  -webkit-appearance: none;
+  background-color: #fff;
+  outline: none;
+  font-size: 13px !important;
+
+  .v-input__control {
+    min-height: 36px !important;
+  }
+
+  .v-input__slot {
+    box-shadow: none !important;
+    background: none !important;
+  }
+
+  .v-label {
+    font-size: 13px;
+  }
+}
+
+.v-autocomplete-input {
+  -webkit-appearance: none;
+}
+
+.chart-links {
+  display: flex;
+  margin-bottom: 16px;
+
+  a {
+    font-size: 14px;
+    font-weight: normal;
+    color: $color-dark;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    position: relative;
+
+    &:hover,
+    &.active {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a.all {
+    &:before {
+      content: "";
+      background: url("~@/assets/images/all-filter.png");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  a.spotify {
+    &:before {
+      content: "";
+      background: url("~@/assets/images/icon-spotify.png");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  a.beatport {
+    &:before {
+      content: "";
+      background: url("~@/assets/images/icon-beatport.png");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  a.traxsource {
+    &:before {
+      content: "";
+      background: url("~@/assets/images/icon-traxsource.png");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  a.apple {
+    &:before {
+      content: "";
+      background: url("~@/assets/images/icon-apple-music.png");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  a.iTunes {
+    &:before {
+      content: "";
+      background: url("~@/assets/images/icon-itunes.png");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}
+
+.v-dialog .select-group .icon {
+  top: 10px !important;
+}
+
+.admin-list table.v-table thead tr th {
+  padding-top: 20px;
+}
+
+.track-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 20px;
+    border-radius: 24px;
+    font-size: 12px;
+    color: $color-white;
+
+    .icon {
+      font-size: 10px;
+      color: $color-white;
+      margin-right: 5px;
+    }
+  }
+
+  .rate.top {
+    background-color: $color-accent;
+  }
+
+  .rate.bottom {
+    background-color: $color-error;
+  }
+
+  .rate.zero {
+    background-color: $color-secondary-grey;
+  }
+}
+
+.type-select {
+  margin-top: -25px;
+}
+
+.dropdowm-navi .v-list__tile {
+  flex-direction: column;
+}
+
+.dropdowm-navi a {
+  text-decoration: none;
+  color: $color-primary;
+  font-size: 13px
+}
+
+.icon-down {
+  pointer-events: none;
+}
+
+.header .container {
+  padding: 0px 24px;
+}
+
+.header .logo img {
+  margin-top: 4px;
+}
+
+.song-info-wrap .sort-wrap-product {
+  margin-top: 30px;
+}
+
+.header .nav_menu li a.v-btn--active {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    border-bottom: 2px solid $color-primary;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+  }
+}
+
+@media (max-width: 959px) {
+  .charttool-wrap .stats-chart-wrap .stats-list li {
+    width: 33% !important;
+  }
+
+  .header[data-v-61dd7a3d] {
+    height: 62px;
+  }
+
+  .chart-links {
+    flex-wrap: wrap;
+
+    a {
+      margin-bottom: 10px;
+    }
+  }
+
+  .select-list {
+    flex-wrap: wrap;
+
+    .select-group {
+      margin-bottom: 10px;
+    }
+  }
+
+  .description-wrap {
+    .list {
+      flex-direction: column;
+
+      .left {
+        width: 100% !important;
+      }
+
+      .right {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .position-wrap {
+    .list {
+      flex-direction: column;
+
+      .left {
+        width: 100% !important;
+      }
+
+      .right {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .name-wrap .content h3 {
+    font-size: 30px;
+  }
+
+  .song-card {
+    .image {
+      width: 20% !important;
+    }
+
+    .content {
+      width: 70% !important;
+    }
+
+    .arrow {
+      width: 10% !important;
+    }
+  }
+
+  .updates-wrap .head-block {
+    flex-direction: column;
+
+    .chart-links {
+      width: 100% !important;
+      justify-content: flex-start !important;
+    }
+
+    h2 {
+      width: 100% !important;
+    }
+  }
+
+  .song-card .content .blocks {
+    height: auto !important;
+  }
+
+  .wrap-chart-table {
+    .sort-wrap {
+      flex-direction: column;
+    }
+
+    .select-list {
+      justify-content: flex-start;
+    }
+  }
+
+  .admin-pages {
+    .sort-wrap {
+      flex-direction: column;
+    }
+
+    .search-btn-wrap {
+      margin-top: 10px;
+    }
+  }
+  .type-select {
+    margin-top: -16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrap-table .item-table .item-content {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ededed;
+  }
+
+  .wrap-table .head-table {
+    flex-wrap: wrap;
+  }
+
+  .position-w {
+    width: 100% !important;
+    justify-content: flex-start;
+  }
+
+  .platform-w {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .listtype-w {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .listname-w {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .region-w {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .publisher-w {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .item-content .block.icon:before {
+    margin: unset;
+  }
+}
+
+@media (max-width: 599px) {
+  .sort-wrap .inputs-row {
+    flex-direction: column;
+  }
+  .charttool-wrap .stats-chart-wrap .stats-list li {
+    width: 50% !important;
+  }
+
+  .header {
+    height: auto !important;
+
+    .right {
+      justify-content: space-between;
+      margin-top: -40px;
+    }
+
+    .left-block {
+      flex-direction: column;
+    }
+
+    .nav_menu {
+      padding-left: 12px;
+      margin-top: 5px;
+    }
+  }
+
+  .logo[data-v-4ef0a45b] {
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+
+  .description-wrap {
+    padding: 20px 20px;
+  }
+
+  .position-wrap {
+    padding: 20px 20px;
+  }
+
+  .name-wrap .content {
+    padding-top: 40px;
+    padding-right: 20px;
+  }
+
+  .name-wrap .content h3 {
+    font-size: 20px;
+  }
+
+  .song-card {
+    flex-direction: column;
+
+    .image {
+      width: 100% !important;
+      margin-bottom: 15px;
+    }
+
+    .content {
+      width: 100% !important;
+      margin-bottom: 15px;
+
+      .info {
+        flex-wrap: wrap;
+
+        .block {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .arrow {
+      width: 100% !important;
+    }
+  }
+
+  .login-wrap {
+    padding: 30px 40px !important;
+
+    .btn-wrap {
+      flex-direction: column;
+    }
+
+    h2 {
+      font-size: 22px !important;
+    }
+  }
+
+  .song-info-wrap .description-wrap {
+    flex-direction: column;
+  }
+
+  .song-info-wrap .description-wrap .image {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+  .song-info-wrap .description-wrap .list h2 {
+    margin-bottom: 15px;
+  }
+
+  .song-info-wrap .description-wrap .list .item .heading {
+    width: auto !important;
+  }
+
+  .song-info-wrap .description-wrap .list .item {
+    justify-content: space-between !important;
+  }
+
+  .platform-wrap {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 409px) {
+  .date-wrap {
+    width: 100%;
+
+    .select-date {
+      max-width: unset;
+      width: 100%;
+    }
+  }
+
+  .select-list {
+    .select-group {
+      max-width: unset;
+      width: 100%;
+      margin-right: 0;
+
+      select {
+        max-width: unset;
+        width: 100%;
+      }
+    }
+  }
+}

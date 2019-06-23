@@ -1,0 +1,87 @@
+{
+  "updates": {
+    "title": "Letzte Aktualisierung",
+    "not_found": "It seems we can’t find anything for your releases - yet!",
+    "not_found1": "That’s not as bad as it seems and we are pretty sure this will change soon.",
+    "not_found2": "Just check back everyday to keep in touch with your latest achievements!",
+    "not_found3": "Now go out and conquer the charts!"
+  },
+  "products": {
+    "title": "Chartlisten - Übersicht",
+    "chart_title": "Überblick",
+    "latest_charts_title": "Neueste Charts",
+    "platform_title": "Plattform",
+    "type_title": "Produktart",
+    "release_date_title": "Veröffentlichungsdatum",
+    "search": "Suche...",
+    "stats_current": "CURRENTLY CHARTED",
+    "stats_all": "CHARTED ALL TIME",
+    "stats_30days": "CHARTED IN 30 DAYS",
+    "pagination": {
+      "param1": "Anzeigen",
+      "param2": "zu",
+      "param3": "von",
+      "param4": "einträge"
+    },
+    "table": {
+      "cover_title": "Abdeckung",
+      "artist_title": "Künstler",
+      "name_title": "Titel",
+      "type_title": "Art",
+      "date_title": "Veröffentlichungsdatum",
+      "position_title": "Position"
+    },
+    "type_select": {
+      "param1": "alles",
+      "param2": "spur",
+      "param3": "produkt"
+    }
+  },
+  "product": {
+    "title": "Chartliste - Details",
+    "search": "Suche nach Publisher oder Listenname",
+    "description": {
+      "label_title": "Etikette",
+      "genre_title": "Genre",
+      "release_title": "Veröffentlichung",
+      "ean_title": "EAN (oder ISRC)"
+    },
+    "diagram_title": "Ereignisverlauf",
+    "table": {
+      "platform_title": "Plattform",
+      "list_type_title": "Listentyp",
+      "list_name_title": "Listennamen",
+      "region_title": "Region",
+      "publisher_title": "Herausgeber"
+    }
+  },
+  "login": {
+    "login": "Anmeldung",
+    "learn_more": "Lerne mehr über dig dis!",
+    "title": "Sie sind nicht angemeldet. Klicken Sie auf, um zum Anmeldebildschirm zu gelangen",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus vulputate ornare. Mauris placerat posuere metus at sollicitudin."
+  },
+  "charlists": {
+    "platform": "Platform",
+    "listType": "List type",
+    "listName": "List name",
+    "lastTimeCrawled": "Last time crawled",
+    "lastChartHitFound": "Last chart hit found"
+  },
+  "charthit": {
+    "chartName": "Chart list",
+    "hitDate": "Found date"
+  },
+  "common": {
+    "header": {
+      "products_link": "Produkte"
+    },
+    "footer": {
+      "text": "Alle Rechte vorbehalten © dig dis!"
+    },
+    "all": "Alles",
+    "back": "Zurück",
+    "error": "Es wurde kein Benutzer mit diesem Token gefunden",
+    "help": "Give Feedback"
+  }
+}

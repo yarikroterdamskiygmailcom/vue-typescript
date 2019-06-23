@@ -1,0 +1,87 @@
+{
+  "updates": {
+    "title": "Latest Updates",
+    "not_found": "It seems we can’t find anything for your releases - yet!",
+    "not_found1": "That’s not as bad as it seems and we are pretty sure this will change soon.",
+    "not_found2": "Just check back everyday to keep in touch with your latest achievements!",
+    "not_found3": "Now go out and conquer the charts!"
+  },
+  "products": {
+    "title": "Chart Overview",
+    "chart_title": "Overview",
+    "latest_charts_title": "Latest Charts",
+    "platform_title": "Platform",
+    "type_title": "Product type",
+    "release_date_title": "Release Date",
+    "search": "Search...",
+    "stats_current": "CURRENTLY CHARTED",
+    "stats_all": "CHARTED ALL TIME",
+    "stats_30days": "CHARTED IN 30 DAYS",
+    "pagination": {
+      "param1": "Showing",
+      "param2": "to",
+      "param3": "of",
+      "param4": "entries"
+    },
+    "table": {
+      "cover_title": "Cover",
+      "artist_title": "Artist",
+      "name_title": "Title",
+      "type_title": "Type",
+      "date_title": "Release Date",
+      "position_title": "Position"
+    },
+    "type_select": {
+      "param1": "all",
+      "param2": "track",
+      "param3": "product"
+    }
+  },
+  "product": {
+    "title": "Product Details",
+    "search": "Search Publisher or Listname",
+    "description": {
+      "label_title": "Label",
+      "genre_title": "Genre",
+      "release_title": "Release",
+      "ean_title": "EAN (or ISRC)"
+    },
+    "diagram_title": "Event history",
+    "table": {
+      "platform_title": "Platform",
+      "list_type_title": "List type",
+      "list_name_title": "List Name",
+      "region_title": "Region",
+      "publisher_title": "Publisher"
+    }
+  },
+  "login": {
+    "login": "Login",
+    "learn_more": "learn more about dig dis!",
+    "title": "You are not logged in, please click to button to go to the login screen",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus vulputate ornare. Mauris placerat posuere metus at sollicitudin."
+  },
+  "chartlists": {
+    "platform": "Platform",
+    "listType": "List type",
+    "listName": "List name",
+    "lastTimeCrawled": "Last time crawled",
+    "lastChartHitFound": "Last chart hit found"
+  },
+  "charthit": {
+    "chartName": "Chart list",
+    "hitDate": "Found date"
+  },
+  "common": {
+    "header": {
+      "products_link": "Products"
+    },
+    "footer": {
+      "text": "All rights reserved © dig dis!"
+    },
+    "all": "All",
+    "back": "Back",
+    "error": "No user found with this token",
+    "help": "Give Feedback"
+  }
+}
